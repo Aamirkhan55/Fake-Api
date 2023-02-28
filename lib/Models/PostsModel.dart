@@ -1,9 +1,10 @@
 class PostsModel {
   PostsModel({
-      this.userId, 
-      this.id, 
-      this.title, 
-      this.body,});
+      required this.userId,
+      required this.id,
+      required this.title,
+      required this.body,
+  });
 
   PostsModel.fromJson(dynamic json) {
     userId = json['userId'];
@@ -11,10 +12,10 @@ class PostsModel {
     title = json['title'];
     body = json['body'];
   }
-  int userId;
-  int id;
-  String title;
-  String body;
+  int? userId;
+  int? id;
+  String? title;
+  String? body;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};

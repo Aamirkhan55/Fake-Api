@@ -13,7 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   List<PostsModel> postList = [];
+
+  // Using JsonPlaceHolder Post request for testing purpose.
 
   Future<List<PostsModel>> getPostApi() async {
     final response =
